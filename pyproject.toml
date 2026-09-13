@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "overfit"
+version = "0.1.0"
+description = "Deflated Sharpe Ratio and CSCV probability of backtest overfitting: is this Sharpe the reward for skill or for searching"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sandeep Singh Rai" }]
+keywords = ["quantitative-finance", "backtesting", "backtest-overfitting", "deflated-sharpe-ratio", "multiple-testing", "sharpe-ratio"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = ["numpy>=1.24", "scipy>=1.10"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/WatchTree-19/overfit"
+
+[tool.setuptools.packages.find]
+include = ["overfit*"]
